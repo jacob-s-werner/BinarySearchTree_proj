@@ -8,7 +8,7 @@ namespace BinarySearchTree
 {
     class BinarySearchTree
     {
-
+        public Node rootNode, lesserNode, greaterNode;
         public BinarySearchTree()
         {
 
