@@ -13,9 +13,43 @@ namespace BinarySearchTree
         {
 
         }
-        public void Add()
+        public void Add(Node nodeToAdd)
         {
-
+            if (rootNode == null)
+            {
+                rootNode = nodeToAdd;
+            }
+            else
+            {
+                Node currentNode = rootNode;
+                while (true)
+                {
+                    if (nodeToAdd.data < currentNode.data)
+                    {
+                        if (currentNode.lesserNode == null)
+                        {
+                            currentNode.lesserNode = nodeToAdd;
+                            break;
+                        }
+                        else
+                        {
+                            currentNode = currentNode.lesserNode;
+                        }
+                    }
+                    else
+                    {
+                        if (currentNode.greaterNode == null)
+                        {
+                            currentNode.greaterNode = nodeToAdd;
+                            break;
+                        }
+                        else
+                        {
+                            currentNode = currentNode.greaterNode;
+                        }
+                    }
+                }
+            }
         }
         public void Search()
         {
