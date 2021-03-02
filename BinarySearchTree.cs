@@ -53,7 +53,27 @@ namespace BinarySearchTreeProj
         }
         public Node Search(int nodeDataToFind)
         {
-            
+            Node currentNode = rootNode;
+            while (true)
+            {
+                if (currentNode.data.Equals(nodeDataToFind))
+                {
+                    return currentNode;
+                }
+                else if (nodeDataToFind < currentNode.data)
+                {
+                    currentNode = lesserNode;
+                }
+                else
+                {
+                    currentNode = greaterNode;
+                }
+
+                if (currentNode == null)
+                {
+                    return null;
+                }
+            }
         }
     }
 }
