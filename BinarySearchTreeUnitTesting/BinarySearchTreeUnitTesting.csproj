@@ -57,9 +57,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinarySearchTree.csproj">
+    <ProjectReference Include="..\BinarySearchTreeProj.csproj">
       <Project>{488d6328-44df-40de-bb28-8f797f2e0411}</Project>
-      <Name>BinarySearchTree</Name>
+      <Name>BinarySearchTreeProj</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

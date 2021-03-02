@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using BinarySearchTree;
+using BinarySearchTreeProj;
 
 namespace BinarySearchTreeUnitTesting
 {

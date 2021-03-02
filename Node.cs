@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinarySearchTree
+namespace BinarySearchTreeProj
 {
-    class Node
+    public class Node
     {
         public int data;
         public Node lesserNode;
