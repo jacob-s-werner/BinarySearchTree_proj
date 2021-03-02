@@ -68,11 +68,11 @@ namespace BinarySearchTreeProj
                 }
                 else if (nodeDataToFind < currentNode.data)
                 {
-                    currentNode = lesserNode;
+                    currentNode = currentNode.lesserNode;
                 }
                 else
                 {
-                    currentNode = greaterNode;
+                    currentNode = currentNode.greaterNode;
                 }
 
                 if (currentNode == null)
