@@ -51,9 +51,9 @@ namespace BinarySearchTreeProj
                 }
             }
         }
-        public void Search()
+        public Node Search(Node nodeToFind)
         {
-
+            
         }
     }
 }
