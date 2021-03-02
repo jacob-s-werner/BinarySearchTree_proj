@@ -7,6 +7,7 @@ namespace BinarySearchTreeUnitTesting
     [TestClass]
     public class AddMethodTests
     {
+        [TestMethod]
         public void Add_ThreeNodesDifferentValues_Node23ProperlyAdded()
         {
             BinarySearchTree tree = new BinarySearchTree();
