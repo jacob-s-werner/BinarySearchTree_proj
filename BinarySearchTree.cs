@@ -24,6 +24,12 @@ namespace BinarySearchTreeProj
                 Node currentNode = rootNode;
                 while (true)
                 {
+                    if (currentNode.data == nodeToAdd.data)
+                    {
+                        Console.WriteLine("Node Already Exists");
+                        break;
+                    }
+
                     if (nodeToAdd.data < currentNode.data)
                     {
                         if (currentNode.lesserNode == null)
